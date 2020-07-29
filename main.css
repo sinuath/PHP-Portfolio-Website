@@ -1,0 +1,410 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+body { 
+	FONT-FAMILY:  calibri, Arial, courier;
+	color: #66ccff;
+	text-align: center;
+	background: #404143;
+	width: 100%;
+}
+div.imgWrapper{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+div.imgWrapper .caption{
+    
+    display: block;
+    padding-top: 12px;
+}
+div.imgWrapper .caption .link{
+    font-size: 17px !important;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.TopBarThing{
+    height: 55px;
+    width: 100%;
+    border: 0px;
+    background-color: #666666;
+    overflow: hidden;
+}
+tr.even{
+    background-color: #012727;
+}
+.LoginMenu{
+    float: right;
+    margin-top: 1px;
+}
+.SubmitButton{
+    float: right;
+    margin-top: 10px; 
+   
+}
+.LogInLink{
+    text-decoration: none;
+    padding: 17px 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid black;
+    top: 14px;
+    right: 3px;
+    position: relative;
+}
+.LogInLink:hover{
+    background: -webkit-linear-gradient(#838383, #666, #363636); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#838383, #666, #363636); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#838383, #666, #363636); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#838383, #666, #363636); /* Standard syntax */
+    box-shadow: 0px -3px 4px 4px #9C9C9C;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   padding:10px;
+}
+#HeaderLogo{
+    float: left;
+    max-width: 325px;
+    width: 100%;
+    height: 55px;
+    background-color: black;
+    overflow: hidden;
+}
+.HeaderLogoCorner{
+    height: 60px;
+    width: 90px;
+    background-color: #666666;
+    position: relative;
+    top: 26px;
+    left: 278px;
+    opacity: .6;
+        transform: rotate(125deg);
+    -ms-transform: rotate(125deg); /* IE 9 */
+    -webkit-transform: rotate(125deg); /* Safari and Chrome */
+    -o-transform: rotate(142deg); /* Opera */
+    -moz-transform: rotate(125deg); /* Firefox */
+}
+.HeaderLogoText{
+    FONT-FAMILY:  Moltors, calibri, Arial, courier;
+    font-size: 32px;
+    position: relative;
+    position: absolute;
+    top: 16px;
+    left: 4%;
+}
+@media screen and (max-device-width: 350px) {
+   .HeaderLogoText{
+    left: 10% !important;
+    } 
+}
+.MusicRequest{
+    text-align: left;
+}
+.MusicRequest th, .MusicRequest td{
+    padding-left: 18px;
+}
+.MovieRequest{
+    text-align: left;
+}
+.MovieRequest th, .MovieRequest td{
+    padding-left: 10px;
+}
+.Scrollable{
+    overflow-y: scroll;
+    max-height: 150px;
+    width: 99.7%;
+}
+.NewNote{
+    float: right;
+    padding-top: 15px;
+    text-decoration: none;
+}
+#BackGrad{
+    position:absolute;
+    z-index: -1;
+    height: 280px;
+    width: 100%;
+    background: -webkit-linear-gradient(black, #404143); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, #404143); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, #404143); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, #404143); /* Standard syntax */
+}
+#body {
+    padding:10px;
+    padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   position: absolute;
+   bottom:0;
+   width:100%;
+   height:40px;   /* Height of the footer */
+   background:black;
+   padding-top: 6px;
+}
+#footerlinks{
+    padding-left:20%;
+}
+.google{
+    max-width:200px;
+    width:100%;
+}
+#footerlinks a{
+   text-decoration: none;
+   padding: 0 3px;
+}
+#footerSearch{
+    float:right;
+    right:10;
+}
+#footer div{
+    display: inline-block;
+}
+.archive_list{
+    text-align: left;
+    background-color: background;
+    height: 20px;
+    width: 300px;
+    background-color: #BCD2EE;
+    margin: 10px 10px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.archive_list *{
+    display: inline-flex;
+    text-decoration: none;
+    padding: 0px 1px;
+}
+.admin_controls{
+    float:right;
+    position: relative;
+}
+div.date { 
+	text-align: left;
+	font-size: 9pt;
+	color: #585858;
+}
+div.title {
+	font-weight: bolder; 
+	text-align: center;
+	font-size: 14pt;
+	color: #99DDFF;
+}
+div.log_entry {
+        border-radius: 17px;
+	background-color: black;
+	max-width: 700px;
+        width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:27px;
+	padding-bottom:32px;
+	padding-right:50px;
+	padding-left:50px;
+	text-align: left;
+        box-shadow: 3px 3px 5px 2px;
+}
+div.log {
+        border-radius: 17px;
+	background-color: black;
+	max-width: 700px;
+        width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:27px;
+	padding-bottom:32px;
+	padding-right:50px;
+	padding-left:50px;
+	text-align: left;
+        box-shadow: 3px 3px 5px 2px;
+}
+@media screen and (max-device-width: 815px) {
+    div.log {
+	padding: 5px 5px 5px 10px;
+    }
+}
+.login{
+    padding: 10px;
+    border-radius: 10px;
+}
+div.ProjectTitle {
+	font-weight: bolder; 
+	text-align: center;
+	font-size: 18pt;
+	color: #99DDFF;
+}
+div.ProjectTitle a{
+	font-weight: bolder; 
+	text-align: center;
+	font-size: 18pt;
+	color: #99DDFF;
+        text-decoration: none;
+}
+div.projectInfo {
+        border-radius: 17px;
+	background-color: black;
+	max-width: 700px;
+        width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:27px;
+	padding-bottom:30px;
+	padding-right:50px;
+	padding-left:50px;
+	text-align: left;
+        box-shadow: 3px 3px 5px 2px;
+}
+div.foobar {
+        border-radius: 17px;
+	background-color: black;
+        max-width: 700px;
+        width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:21px;
+	padding-bottom:60px;
+	padding-right:50px;
+	padding-left:50px;
+	text-align: left;
+}
+div.project {
+        border-radius: 17px;
+	background-color: black;
+        max-width: 700px;
+        width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:21px;
+        padding-bottom:60px;
+	padding-right:50px;
+	padding-left:50px;
+	text-align: left;
+        box-shadow: 3px 3px 5px 2px;
+}
+div.project2 {
+        border-radius: 17px;
+	background-color: black;
+        max-width: 700px;
+        width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+        box-shadow: 3px 3px 5px 2px;
+}
+.projectPicture{
+    max-width: 200px;
+    width: 100%;
+}
+.projectPictureWrapper{
+    text-align:center;
+}
+.projectPictureWrapperInner{
+    margin: auto;
+    padding: 4px;
+    background-color: #121212;
+    max-width: 204px;
+}
+div.project2:hover {
+        color: #c7ecff;
+}
+.linkArea{
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 60px;
+    max-width: 700px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project2 a{
+    text-decoration: none;
+    color: #66ccff !important;
+}
+
+div.project2 .description{
+    padding-left: 50px;
+}
+div.project .rightlink{
+    text-align: right !important;
+    padding-top: 10px;
+}
+div.sidebar {
+    max-width: 160px;
+    width: 100%;
+    padding: 5px;
+    list-style-type: none;
+    border-radius: 17px;
+    background-color: black;
+    box-shadow: 3px 3px 5px 2px;
+    position: absolute;
+}
+ul {
+    list-style-type: none;
+}
+.NotVisible {
+    display: none;
+}
+table.TempAboutMe {
+        border-radius: 17px;
+	background-color: black;
+        max-width: 700px;
+        width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:27px;
+	padding-bottom:32px;
+	padding-right:50px;
+	padding-left:50px;
+        box-shadow: 3px 3px 5px 2px;
+}
+
+img.floatleft { 
+    border: 0;
+    float: left; 
+    clear: left; 
+    margin: 4px; 
+}
+img.floatRight { 
+    border: 0;
+    float: right; 
+    clear: right; 
+    margin: 4px; 
+}
+
+A:link
+{
+    FONT-SIZE: 13px;
+    BACKGROUND: none transparent scroll repeat 0% 0%;
+    COLOR: #FFFFFF;
+    FONT-FAMILY: Verdana, Helvetica;
+}
+A:visited
+{
+    FONT-SIZE: 13px;
+    BACKGROUND: none transparent scroll repeat 0% 0%;
+    COLOR: #FFFFFF;
+    FONT-FAMILY: Verdana, Helvetica;
+} 
+A:hover
+{
+    FONT-SIZE: 13px;
+    BACKGROUND: none transparent scroll repeat 0% 0%;
+    COLOR: #E6E6E6;
+    FONT-FAMILY: Verdana, Helvetica;
+}
+INPUT { 
+	background-color: black;
+	border-color: 333333;
+	color: 66ccff;
+	FONT-FAMILY: Verdana, Helvetica;
+	font-weight: 0;
+	font-size: 11pt;
+}
+
